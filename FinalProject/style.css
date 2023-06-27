@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #f9f4f4;
+    font-family: Arial, sans-serif;
+}
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    background-color: #10e5ec;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 999;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-margin{margin-right: 80px;}
+
+  .navbar-title {
+    font-weight: bold;
+    margin: 0;
+  }
+  /* side nav section*/
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+/* background video Sections */
+  .background-video {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .background-video .content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  .city{text-align:center}
+  
+ /* style for city image grid */
+
+ .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+ }
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 30px;
+ }
+ .gallery img{
+    width: 100%;
+ }
+
+ /*styles for travel requirements*/
+ .Travel-requirements{background-color: white ;}
+  .Travel-requirements h1{
+  
+      text-align: center;
+    }
+    
+    .Travel-requirements h2 {
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+    p {margin-left: 20px;
+    margin-top: 50px;}
+    
+    ul {
+      list-style-type: disc;
+      padding-left: 50px;
+    }
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+ /* styles for our services*/
+#services {
+  padding: 80px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f6f6f7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-list {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media query for our services */
+@media screen and (max-width: 767px) {
+  .card {
+    padding: 20px;
+  }
+  
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+  
+  /* Food section styles */  
+#food-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .video-container {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-container {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .carousel-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-item .food-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .carousel-item:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #10e5ec;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-container a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .left,
+  .right {
+    flex-basis: 20%;
+  }
+  
+  .middle {
+    flex-basis: 60%;
+  }
+  /*media query for footer*/
+  @media (max-width: 767px) {
+    .footer-container {
+      flex-wrap: wrap;
+    }
+    
+    .left,
+    .middle,
+    .right {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  /* contact form*/
+  #contact {
+    padding: 80px;
+    background-color: white;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b5b1b1;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff4e35;
+  }
+
+  /* Media Query for contact form */
+  @media screen and (min-width: 768px) {
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+    }
+  }
+  
+/* media querry for side nav*/
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  /*food media query*/
+ @media (min-width: 1024px) {
+    .carousel {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  /*city grid*/
+  
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
